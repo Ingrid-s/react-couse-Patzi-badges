@@ -12,13 +12,13 @@ class BadgesList extends React.Component{
                    return (
                        <li key={badges.id} className= 'Badge__section-name'>
                            <div className='BadgeList_badge-container'>
-                                <img src={badges.avatarUrl} className='BadgeList__avatar'/>
+                                <img src={badges.avatarUrl} alt='Logo de la conferencia' className='BadgeList__avatar' />
                             <div className='BadgeList_badge_text_container'>
                                 <p className='BadgeList__name'>
                                     {badges.firstName} {badges.lastName}
                                 </p>
                                 <p>
-                                    <img src={twLogo} className='tw__logo'/>
+                                    <img src={twLogo} alt='logo de twitter' className='tw__logo'/>
                                     <span className='tw__text'>{badges.twitter}</span>
                                 </p>
                                 <p>

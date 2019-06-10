@@ -1,0 +1,22 @@
+.home {
+    
+    height: 100vh;
+    background-image: url('../../images/stars.svg');
+    background-color: #000;
+    color: #fff;
+   
+}
+.container{
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+.logo_conf{
+ width: 15rem;
+ margin-bottom: 15%;
+}
+
+.astronauts {
+    margin-left: 40%;
+    width: 35rem;
+}
