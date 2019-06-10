@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './styles/Home.css';
-import stars from '../images/stars.svg';
+//import stars from '../images/stars.svg';
 import astronauts from '../images/astronauts.svg';
 import platziconfLogo from '../images/platziconf-logo.svg';
 
