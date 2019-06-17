@@ -1,18 +1,35 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom';
 import"./styles/BadgesList.css"
 import twLogo from '../images/twitter.svg';
+import Gravatar from '../Components/Gravatar'
 
 
 class BadgesList extends React.Component{
     render(){
+        if(this.props.badges.length === 0){
+            return (
+                <div>
+                    <h3>No badges were found!</h3>
+                    <Link  className='btn btn-primary' to= '/badges/New'>
+                        Create new badge
+                    </Link>
+                </div>
+            )
+        }
         return(
            <ul className='list-unstyled'>
                {this.props.badges.map(badges => {
                    return (
                        <li key={badges.id} className= 'Badge__section-name'>
                            <div className='BadgeList_badge-container'>
-                                <img src={badges.avatarUrl} alt='Logo de la conferencia' className='BadgeList__avatar' />
+                                <Gravatar
+                                    email ={badges.email}
+                                    alt='Avatar'
+                                    className='BadgeList__avatar'
+                                />
+                                 
                             <div className='BadgeList_badge_text_container'>
                                 <p className='BadgeList__name'>
                                     {badges.firstName} {badges.lastName}
